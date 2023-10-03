@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border:solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #yellowgreen{
+            background-color: yellowgreen;
+        }
+        #green{
+            background-color: green;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="red"   onclick="changeBG('#ff0000')"></span>
+        <span class="btn" id="blue"  onclick="changeBG('#0000ff')"></span>
+        <span class="btn" id="yellowgreen" onclick="changeBG('#9acd32')"></span>
+        <span class="btn" id="green"  onclick="changeBG('#008000')"></span>
+        <span class="btn" id="black"  onclick="changeBG('#000000')"></span>
+
+    </div>
+    <h1 class="text"> About Us</h1>
+    <img src="about-us.jpg" alt="about Us">
+    <p class="text"> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, commodi similique aspernatur ut quasi laboriosam minima, deleniti quam repudiandae earum adipisci aperiam eveniet facere. Voluptas, labore ab. Ipsum nesciunt facere sunt quia dolor, neque, aut, illum reprehenderit in cupiditate ab non pariatur libero! Maxime quos iusto nostrum fugit asperiores. Velit ipsa, ducimus rerum tempora consectetur porro optio est non. A cumque aliquam deserunt. Porro dignissimos nobis fugiat voluptas vitae quos atque nisi sint sequi ipsum voluptatum sunt voluptatibus expedita quae omnis eos explicabo natus tempora, dolores excepturi vel et facere. Provident accusamus, nihil sint autem impedit omnis sunt est velit et distinctio illum laboriosam molestias? Rerum, porro hic unde, incidunt saepe accusantium reiciendis dolore, alias debitis error asperiores corporis harum officia modi sequi et veritatis numquam nulla? Voluptate officiis autem totam vitae! Error veniam dicta ipsum fugit temporibus minima! Officiis voluptates iusto laboriosam at provident cupiditate assumenda numquam debitis vitae! Itaque dolore, a eius saepe, vel eveniet voluptatibus quibusdam obcaecati iusto exercitationem aperiam nemo optio! Officiis soluta reiciendis aliquid obcaecati, iste, eius qui quo doloribus doloremque mollitia quas esse deserunt dolore accusantium vitae reprehenderit tempora. Quam magni velit deserunt laudantium delectus illum, vitae incidunt veniam minima mollitia recusandae culpa? Possimus facilis iusto, laborum officiis obcaecati repellendus error voluptatibus totam veniam odit repellat sint accusantium quo, eius temporibus! Aliquid totam tenetur neque. Expedita inventore adipisci id doloribus ea voluptatum aut fugiat, modi ipsa nulla a. Id eum consectetur architecto ab molestiae commodi ea obcaecati aut porro facilis soluta alias consequatur dolor, voluptas dicta necessitatibus. Similique necessitatibus excepturi reiciendis nobis veritatis dicta harum molestiae, possimus molestias iusto officiis repellat obcaecati magni, cupiditate aut et, eius facilis esse numquam pariatur provident. Quasi natus distinctio labore reiciendis, inventore iusto nihil impedit numquam dicta id obcaecati molestias quo unde incidunt repellat ullam ipsa molestiae, quos saepe eos! Facere quibusdam praesentium voluptate sunt, ipsam, vero aspernatur accusamus nulla dignissimos ut possimus autem eligendi reiciendis impedit a at nihil rem beatae culpa animi? Error dolore aspernatur recusandae reprehenderit quidem quaerat pariatur suscipit porro atque ut ipsa maiores, omnis minus quae ex non eaque neque officia ipsam. Dolorem expedita, velit mollitia nostrum assumenda fugit distinctio, quidem illo, iusto non tenetur obcaecati ut quasi maxime voluptatem deleniti placeat sapiente voluptate animi? Nihil, dolore? Dolore nisi modi fugit minus tempora non aliquid pariatur mollitia eius iusto, accusamus sed molestias facere vero? Tempore sequi harum nostrum quaerat dolore! Fugiat fugit voluptate amet magni aperiam sit recusandae illum animi ad vero explicabo quasi expedita tempore nesciunt vitae quos nihil impedit cumque voluptatibus, soluta ab dignissimos quam. Ab quidem unde sint excepturi temporibus obcaecati veritatis magni dolor laborum quod dignissimos esse, cupiditate, rem, minima ducimus architecto! Laborum iure exercitationem labore officia illum hic fugit, consequatur perferendis accusam
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor=color;
+            let txt=document.getElementsByClassName("text");
+            if (color=="#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }
+        }
+    </script>    
+</body>
+</html>
